@@ -1,13 +1,15 @@
-var currdeg = 0
-document.querySelector('.next').addEventListener('click',rotate);
-document.querySelector('.prev').addEventListener('click',rotate);
+var currdeg = 0;
+document.querySelectorAll('i.fa-arrow-right, i.fa-arrow-left').forEach(function(el) {
+  el.addEventListener('click', rotate);
+});
 
 function rotate(e){
-    if(e.target.className =='next'){
-        currdeg = currdeg - 60;
-    }
-    if(e.target.className =='prev'){
-        currdeg = currdeg + 60;
-    }
-    document.querySelector('.items').style.transform = 'rotateY('+ currdeg +'deg)';
+  var target = e.target.parentNode;
+  if(target.classList.contains('next')){
+    currdeg = currdeg - 30;
+  }
+  if(target.classList.contains('prev')){
+    currdeg = currdeg + 30;
+  }
+  document.querySelector('.items').style.transform = 'rotateY('+ currdeg +'deg)';
 }
