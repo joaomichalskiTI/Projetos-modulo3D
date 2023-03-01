@@ -26,6 +26,14 @@ body{
     transform-style: preserve-3d;
     transition: transform 1s;
 }
+.item p{
+    color: white;
+    height: 30px;
+    margin-top: -160px;
+}
+.item a{
+    text-decoration: none;
+}
 .item{
     display: block;
     position: absolute;
@@ -33,40 +41,41 @@ body{
     width: 250px;
     height: 200px;
     line-height: 200px;
-    font-size: 5em;
     text-align: center;
     justify-content: center;
-    color: aqua;
+    color: rgb(255, 255, 255);
     opacity: 0.97;
     border-radius: 8px;
 }
 .item.a{
     transform: rotateY(0deg) translateZ(250px);
-    background: green;
+    background: rgb(68, 66, 66);
 }
 .item img{
+    margin-top: 20px;
     height: 100px;
     width: 100px;
+    text-decoration: none;
 }
 .item.b{
     transform: rotateY(60deg) translateZ(250px);
-    background: firebrick;
+    background: rgb(68, 66, 66);
 }
 .item.c{
     transform: rotateY(120deg) translateZ(250px);
-    background:blueviolet ;
+    background: rgb(68, 66, 66);
 }
 .item.d{
     transform: rotateY(180deg) translateZ(250px);
-    background: cornflowerblue;
+    background: rgb(68, 66, 66);
 }
 .item.e{
     transform: rotateY(240deg) translateZ(250px);
-    background: antiquewhite;
+    background: rgb(68, 66, 66);
 }
 .item.f{
     transform: rotateY(300deg) translateZ(250px);
-    background: palegreen;
+    background: rgb(68, 66, 66);
 }
 .next, .prev{
     color: white;
