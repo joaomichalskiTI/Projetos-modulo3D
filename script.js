@@ -13,3 +13,9 @@ function rotate(e){
   }
   document.querySelector('.items').style.transform = 'rotateY('+ currdeg +'deg)';
 }
+
+//função de preenchimento de cor com transição da seta
+const icon = document.querySelector('.fa-arrow-righ');
+icon.addEventListener('click', function() {
+  this.classList.add('clicked');
+});
