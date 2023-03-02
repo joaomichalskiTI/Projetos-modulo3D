@@ -98,8 +98,7 @@ body{
     margin-top: -120px;
     background: transparent;
     cursor: pointer;
-    font-size: 40px;
-    
+    font-size: 40px;   
 }
 .next{
     right: 7em;
@@ -122,7 +121,6 @@ body{
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-
 @keyframes carregando {
     0% {
         width: 0%;
