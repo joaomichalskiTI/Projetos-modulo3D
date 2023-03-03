@@ -12,11 +12,6 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-.cabecalho h1{
-    font-family: 'Genos', sans-serif;
-    font-size: 60px;
-    color: rgba(220, 214, 214, 0.861);
-}
 .container{
     margin-top: 100px;
     margin: 0 auto;
@@ -25,7 +20,48 @@ body{
     position: relative;
     perspective: 1000px;
 }
-.abua{
+.cabecalho hr{
+    position: absolute;
+    top: 26vh;
+}
+.hr1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28vw;
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+.hr2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 2px;
+    background: linear-gradient(50deg, rgb(158, 158, 247), blue);
+    animation: slide 2s ease-in-out infinite;
+    border: none;
+
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(calc(28vw - 3vw));
+      }
+      100% {
+        transform: translateX(0);
+      }
+}
+
+.cabecalho h1{
+    font-family: 'Genos', sans-serif;
+    font-size: 60px;
+    color: rgba(220, 214, 214, 0.861);
+}
+.up{
     margin-top: 150px;
 }
 .items{
@@ -36,9 +72,10 @@ body{
     transition: transform 1s;
 }
 .item p{
-    font-family: 'Prosto One', cursive;
+    font-family: 'Genos', sans-serif;
     color: rgba(220, 214, 214, 0.861);
     height: 30px;
+    font-size: 25px;
     margin-top: -160px;
 }
 .item a{
@@ -56,14 +93,7 @@ body{
     color: rgb(255, 255, 255);
     opacity: 0.95;
     border-radius: 8px;
-}
-.item:hover{
-    transform: scale(2.1);
-}
-
-.item.a{
-    transform: rotateY(0deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    border: 1PX solid rgb(138, 130, 130);
 }
 .item img{
     margin-top: 30px;
@@ -72,25 +102,30 @@ body{
     text-decoration: none;
     border-radius: 10px;
 }
+.item.a{
+    transform: rotateY(0deg) translateZ(250px);
+    background: rgb(93, 89, 89);
+}
 .item.b{
     transform: rotateY(60deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    background: rgb(93, 89, 89);
 }
+
 .item.c{
     transform: rotateY(120deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    background: rgb(93, 89, 89);
 }
 .item.d{
     transform: rotateY(180deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    background: rgb(93, 89, 89);
 }
 .item.e{
     transform: rotateY(240deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    background: rgb(93, 89, 89);
 }
 .item.f{
     transform: rotateY(300deg) translateZ(250px);
-    background: rgb(68, 66, 66);
+    background: rgb(93, 89, 89);
 }
 .next, .prev{
     color: white;
@@ -106,19 +141,19 @@ body{
 .prev{
     left: 7em;
 }
-.fa-arrow-right{
+.bola{
     position: relative;
     cursor: pointer;
-    background-color: red;
+    background-color: rgb(167, 150, 150);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
-.fa-arrow-right:hover{
+.bola:hover{
     animation: none;
     animation: linear infinite;
     animation-name: carregando;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 @keyframes carregando {
@@ -129,6 +164,6 @@ body{
         width: 100%;
     }
   }
-
-
-
+  .fa-arrow-left:hover{
+    animation-direction: reverse;
+  }
