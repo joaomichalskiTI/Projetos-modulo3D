@@ -48,7 +48,7 @@ body{
         transform: translateX(0);
       }
       50% {
-        transform: translateX(calc(34vw - 3vw));
+        transform: translateX(calc(34vw - 4vw));
       }
       100% {
         transform: translateX(0);
