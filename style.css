@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Six+Caps&display=swap');
 body{
     background-color: rgba(0, 0, 0, 0.883);
@@ -27,20 +26,20 @@ body{
 .hr1{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 28vw;
+    left: 34vw;
+    width: 32vw;
     height: 2px;
-    background-color: red;
+    background:transparent;
     border: none;
 }
 .hr2{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 5vw;
+    left: 34vw;
+    width: 2vw;
     height: 2px;
-    background: linear-gradient(50deg, rgb(158, 158, 247), blue);
-    animation: slide 2s ease-in-out infinite;
+    background: white;
+    animation: slide 1.5s ease-in-out infinite;
     border: none;
 
 }
@@ -49,7 +48,7 @@ body{
         transform: translateX(0);
       }
       50% {
-        transform: translateX(calc(28vw - 3vw));
+        transform: translateX(calc(34vw - 3vw));
       }
       100% {
         transform: translateX(0);
