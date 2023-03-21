@@ -14,5 +14,3 @@ function rotate(e){
   document.querySelector('.items').style.transform = 'rotateY('+ currdeg +'deg)';
 
 }
-
-
